@@ -12,11 +12,11 @@
       </td>
       <td align="center">
         <img src="./figure/2.path_generated.png" width="320">
-        <br><b>Generated swipe path with example pickle data</b>
+        <br><b>Generated swipe path with example</b>
       </td>
       <td align="center">
         <img src="./figure/3.move_along_path.png" width="320">
-        <br><b>Move along the generated path in MoveIt</b>
+        <br><b>Move along the generated path</b>
       </td>
     </tr>
   </table>
