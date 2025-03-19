@@ -49,5 +49,5 @@
     ```
 - launch swipe example code
     ```bash
-    twc roslaunch swipe_across_the_dishes server.launch
+    roslaunch twc_swipe_across_the_dishes_move_example example.launch
     ```
