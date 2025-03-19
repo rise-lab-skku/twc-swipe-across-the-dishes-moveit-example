@@ -386,7 +386,7 @@ Visualization Manager:
       Velocity_Scaling_Factor: 0.1
     - Class: rviz/Image
       Enabled: true
-      Image Topic: /rgb/image_raw
+      Image Topic: /vis/color_image
       Max Value: 1
       Median window: 5
       Min Value: 0
@@ -406,7 +406,7 @@ Visualization Manager:
       Channel Name: intensity
       Class: rviz/PointCloud2
       Color: 255; 255; 255
-      Color Transformer: RGB8
+      Color Transformer: Intensity
       Decay Time: 0
       Enabled: true
       Invert Rainbow: false
@@ -419,29 +419,17 @@ Visualization Manager:
       Size (Pixels): 3
       Size (m): 0.0010000000474974513
       Style: Flat Squares
-      Topic: /point_cloud2
+      Topic: /vis/point_cloud2
       Unreliable: false
       Use Fixed Frame: true
       Use rainbow: true
-      Value: true
-    - Class: rviz/Image
-      Enabled: true
-      Image Topic: /det_imgs
-      Max Value: 1
-      Median window: 5
-      Min Value: 0
-      Name: Segmask
-      Normalize Range: true
-      Queue Size: 2
-      Transport Hint: raw
-      Unreliable: false
       Value: true
     - Class: rviz/Marker
       Enabled: true
       Marker Topic: /table_detection
       Name: Table
       Namespaces:
-        table: true
+        {}
       Queue Size: 100
       Value: true
     - Alpha: 1
@@ -569,8 +557,17 @@ Visualization Manager:
       Marker Topic: /swipe_across_ths_dishes/dish_edge
       Name: MarkerArray
       Namespaces:
-        {}
+        dish_edge_marker: true
       Queue Size: 100
+      Value: true
+    - Alpha: 1
+      Class: rviz/Axes
+      Enabled: true
+      Length: 0.20000000298023224
+      Name: Axes
+      Radius: 0.009999999776482582
+      Reference Frame: link6
+      Show Trail: false
       Value: true
   Enabled: true
   Global Options:
@@ -588,7 +585,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 2.253998279571533
+      Distance: 4.24802827835083
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -596,17 +593,17 @@ Visualization Manager:
         Value: false
       Field of View: 0.75
       Focal Point:
-        X: 0.08888930082321167
-        Y: 0.025699300691485405
-        Z: 0.2160758376121521
+        X: 0.08014339208602905
+        Y: 0.13146880269050598
+        Z: 0.42518752813339233
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.42979657649993896
+      Pitch: 0.4647964537143707
       Target Frame: world_base
-      Yaw: 4.860002517700195
+      Yaw: 4.9500041007995605
     Saved: ~
 Window Geometry:
   Displays:
@@ -620,10 +617,8 @@ Window Geometry:
     collapsed: false
   MotionPlanning - Trajectory Slider:
     collapsed: false
-  QMainWindow State: 000000ff00000000fd0000000200000000000001fd0000039efc0200000008fb000000100044006900730070006c006100790073010000003d000001ce000000c900fffffffb0000000800480065006c00700000000342000000bb0000006e00fffffffb0000000a00560069006500770073000000010c000000a4000000a400fffffffb0000000c00430061006d00650072006100000002ff000001610000000000000000fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e00670100000374000001890000000000000000fb00000044004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000001600000016fb0000001c004d006f00740069006f006e0050006c0061006e006e0069006e00670100000211000001ca0000017d00fffffffb0000000a0049006d0061006700650000000be0000000f7000000000000000000000001000001c80000039efc0200000002fb00000006005200470042010000003d000001d60000001600fffffffb0000000e005300650067006d00610073006b0100000219000001c20000001600ffffff000003670000039e00000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  QMainWindow State: 000000ff00000000fd0000000200000000000001fd0000039efc0200000008fb000000100044006900730070006c006100790073010000003d000001ce000000c900fffffffb0000000800480065006c00700000000342000000bb0000006e00fffffffb0000000a00560069006500770073000000010c000000a4000000a400fffffffb0000000c00430061006d00650072006100000002ff000001610000000000000000fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e00670100000374000001890000000000000000fb00000044004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000001600000016fb0000001c004d006f00740069006f006e0050006c0061006e006e0069006e00670100000211000001ca0000017d00fffffffb0000000a0049006d0061006700650000000be0000000f7000000000000000000000001000001c80000039efc0200000002fb00000006005200470042010000003d0000039e0000001600fffffffb0000000e005300650067006d00610073006b0000000219000001c20000000000000000000003670000039e00000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   RGB:
-    collapsed: false
-  Segmask:
     collapsed: false
   Views:
     collapsed: false
