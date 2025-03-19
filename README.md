@@ -7,8 +7,16 @@
   <table>
     <tr>
       <td align="center">
-        <img src="./figure/mode_0.gif" width="320">
-        <br><b>Mode 0: Initial State</b>
+        <img src="./figure/1.moveit.png" width="320">
+        <br><b>MoveIt! example code</b>
+      </td>
+      <td align="center">
+        <img src="./figure/2.path_generated.png" width="320">
+        <br><b>Generated swipe path with example pickle data</b>
+      </td>
+      <td align="center">
+        <img src="./figure/3.move_along_path.png" width="320">
+        <br><b>Move along the generated path in MoveIt</b>
       </td>
     </tr>
   </table>
@@ -22,7 +30,8 @@
 - Doosan m1013 driver
     - [installation link](https://github.com/doosan-robotics/doosan-robot)
 - twc-swipe-across-the-dishes module
-    - [installation link](https://github.com/HJS-HJS/twc_swipe_across_the_dishes) module
+    - [installation link](https://github.com/HJS-HJS/twc_swipe_across_the_dishes)
+    - This code must be installed for example to work.
 
 # Run example code
 - launch MoveIt! example code
