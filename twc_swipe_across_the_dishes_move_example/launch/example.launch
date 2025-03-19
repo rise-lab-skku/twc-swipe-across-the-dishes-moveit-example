@@ -1,0 +1,4 @@
+<launch>
+  <arg name="node_name" default="swipe_dish_planner_ex_ros" />
+  <node name="$(arg node_name)" pkg="twc_swipe_across_the_dishes_move_example" type="example.py" output="screen" > </node>
+</launch>
