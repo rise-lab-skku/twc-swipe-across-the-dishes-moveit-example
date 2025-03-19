@@ -11,7 +11,7 @@
   </joint>
 
   <!-- indy7 -->
-	<xacro:include filename="$(find stable_push_env_description)/urdf/indy7_macro.xacro"/>
+	<xacro:include filename="$(find twc_env_description)/urdf/indy7_macro.xacro"/>
   <xacro:indy7_prefix prefix="indy7_"/>
   <joint name="world-indy7_joint" type="fixed">
     <parent link="world_base"/>
@@ -52,7 +52,7 @@
 	</joint>
 
   <!-- doosan -->
-  <xacro:include filename="$(find stable_push_env_description)/urdf/macro.m1013.white.xacro" />
+  <xacro:include filename="$(find twc_env_description)/urdf/macro.m1013.white.xacro" />
   <xacro:m1013 namespace="m1013_"/>
   <joint name="world-doosan_joint" type="fixed">
     <parent link="world_base"/>
@@ -70,7 +70,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="package://stable_push_env_description/meshes/m1013_to_irb120.STL" scale="0.001 0.001 0.001" />
+        <mesh filename="package://twc_env_description/meshes/m1013_to_irb120.STL" scale="0.001 0.001 0.001" />
       </geometry>
     </visual>
   </link>

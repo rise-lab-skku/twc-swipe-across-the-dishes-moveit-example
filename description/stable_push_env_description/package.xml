@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>stable_push_env_description</name>
+  <name>twc_env_description</name>
   <version>0.0.0</version>
-  <description>The stable_push_env_description package</description>
+  <description>The twc_env_description package</description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag -->
   <!-- Example:  -->
