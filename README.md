@@ -24,3 +24,21 @@
 - twc-swipe-across-the-dishes module
     - [installation link](https://github.com/HJS-HJS/twc_swipe_across_the_dishes) module
 
+# Run example code
+- launch MoveIt! example code
+    - launch in virtual mode
+        ```bash
+        roslaunch twc_swipe_across_the_dishes_moveit_example real.launch mode:=virtual
+        ```
+    - if you connect to real robot
+        ```bash
+        roslaunch twc_swipe_across_the_dishes_moveit_example real.launch
+        ```
+- launch swipe server module
+    ```bash
+    twc roslaunch swipe_across_the_dishes server.launch
+    ```
+- launch swipe example code
+    ```bash
+    twc roslaunch swipe_across_the_dishes server.launch
+    ```
