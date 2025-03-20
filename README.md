@@ -45,7 +45,7 @@
         ```
 - launch swipe server module
     ```bash
-    twc roslaunch swipe_across_the_dishes server.launch
+    roslaunch swipe_across_the_dishes server.launch
     ```
 - launch swipe example code
     ```bash
